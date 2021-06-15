@@ -7,6 +7,7 @@ import java.util.List;
 public class ReservaImpl implements Reserva{
 	private Sesion sesion;
 	private Butaca butaca;
+	private boolean disponible;
 	
 	
 	public ReservaImpl() {
@@ -26,6 +27,14 @@ public class ReservaImpl implements Reserva{
 
 	public void setButaca(Butaca butaca) {
 		this.butaca = butaca;
+	}
+
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
 	}
 
 	@Override
