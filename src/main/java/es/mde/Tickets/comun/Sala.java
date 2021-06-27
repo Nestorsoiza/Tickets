@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Sala {
 	private List<Fila> filas;
-
+	private List<Sesion> sesiones;
 	
 	public Sala() {
 		super();
@@ -16,6 +16,14 @@ public class Sala {
 
 	public void setFilas(List<Fila> filas) {
 		this.filas = filas;
+	}
+
+	public List<Sesion> getSesiones() {
+		return sesiones;
+	}
+
+	public void setSesiones(List<Sesion> sesiones) {
+		this.sesiones = sesiones;
 	}
 	
 	
