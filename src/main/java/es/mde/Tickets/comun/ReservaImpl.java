@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReservaImpl implements Reserva{
-	private Sesion sesion;
+	
 	private boolean disponible;
 	
 	
@@ -13,12 +13,7 @@ public class ReservaImpl implements Reserva{
 		super();
 	}
 	
-	public Sesion getSesion() {
-		return sesion;
-	}
-	public void setSesion(Sesion sesion) {
-		this.sesion = sesion;
-	}
+
 
 	public boolean isDisponible() {
 		return disponible;
@@ -28,14 +23,7 @@ public class ReservaImpl implements Reserva{
 		this.disponible = disponible;
 	}
 
-	@Override
-	public LocalDateTime getFechaHoraInicio() {
-		return this.sesion.getFechaHoraInicio();
-	}
-	@Override
-	public LocalDateTime getFechaHoraFin() {
-		return this.sesion.getFechaHoraFin();
-	}
+	
 
 	
 }
