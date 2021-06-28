@@ -6,7 +6,6 @@ import java.util.List;
 
 public class ReservaImpl implements Reserva{
 	private Sesion sesion;
-	private Butaca butaca;
 	private boolean disponible;
 	
 	
@@ -19,14 +18,6 @@ public class ReservaImpl implements Reserva{
 	}
 	public void setSesion(Sesion sesion) {
 		this.sesion = sesion;
-	}
-
-	public Butaca getButaca() {
-		return butaca;
-	}
-
-	public void setButaca(Butaca butaca) {
-		this.butaca = butaca;
 	}
 
 	public boolean isDisponible() {
@@ -45,9 +36,6 @@ public class ReservaImpl implements Reserva{
 	public LocalDateTime getFechaHoraFin() {
 		return this.sesion.getFechaHoraFin();
 	}
-	@Override
-	public Butaca getButacas() {
-		return butaca;
-	}
+
 	
 }
