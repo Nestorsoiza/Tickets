@@ -6,22 +6,29 @@ import java.util.List;
 
 public class ReservaImpl implements Reserva{
 	
-	private boolean disponible;
+	private int edad;
 	
 	
 	public ReservaImpl() {
 		super();
 	}
+
+
+	@Override
+	public int getEdad() {
+		return edad;
+	}
+
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
+	
 	
 
 
-	public boolean isDisponible() {
-		return disponible;
-	}
-
-	public void setDisponible(boolean disponible) {
-		this.disponible = disponible;
-	}
+	
 
 	
 
